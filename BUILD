@@ -9,8 +9,8 @@ load("@rules_jvm_external//:defs.bzl", "artifact")
 
 java_binary(
   name = "java-experimentation",
-  srcs = glob(["src/main/java/dev/wsollers/*.java"]),
-  resources = glob(["src/main/resources/*"]),
+  srcs = glob(["src/main/java/dev/wsollers/**/*.java"]),
+  resources = glob(["src/main/resources/**/*"]),
   main_class = "dev.wsollers.Main",
   deps = [
     artifact("org.slf4j:slf4j-api:2.0.9"),
