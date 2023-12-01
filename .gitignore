@@ -30,3 +30,5 @@ bazel-bin
 bazel-testlogs
 
 bazel-out
+
+output.txt
