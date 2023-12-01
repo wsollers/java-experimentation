@@ -1,0 +1,2 @@
+Built-By: wsollers
+Main-Class: dev.wsollers.Main
