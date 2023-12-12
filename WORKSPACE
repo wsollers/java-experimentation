@@ -3,6 +3,9 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 RULES_JVM_EXTERNAL_TAG = "4.3"
 RULES_JVM_EXTERNAL_SHA = "6274687f6fc5783b589f56a2f1ed60de3ce1f99bc4e8f9edef3de43bdf7c6e74"
 
+JUNIT_JUPITER_VERSION = "5.10.1"
+JUNIT_PLATFORM_VERSION = "1.10.1"
+
 http_archive(
   name = "rules_jvm_external",
   sha256 = RULES_JVM_EXTERNAL_SHA,
@@ -23,6 +26,11 @@ maven_install(
     "com.google.j2objc:j2objc-annotations:1.3",
     "org.codehaus.mojo:animal-sniffer-annotations:1.20",
     "org.checkerframework:checker-qual:3.12.0",
+    "org.junit.platform:junit-platform-launcher:5.10.1",
+    "org.junit.platform:junit-platform-reporting:5.10.1",
+    "org.junit.jupiter:junit-jupiter-api:5.10.1",
+    "org.junit.jupiter:junit-jupiter-params:5.10.1",
+    "org.junit.jupiter:junit-jupiter-engine:5.10.1",
   ],
   fetch_sources = True,
   maven_install_json = "//:maven_install.json",

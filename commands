@@ -1,0 +1,5 @@
+bazel clean
+bazel build //:AllTests
+bazel test //:AllTests
+
+bazel build //:java-experimentation

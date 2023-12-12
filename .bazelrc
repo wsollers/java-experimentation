@@ -1,1 +1,2 @@
 common --enable_bzlmod
+common --jvmopt=-Djava.security.manager=allow
