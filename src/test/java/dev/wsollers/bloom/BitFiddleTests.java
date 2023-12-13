@@ -39,4 +39,14 @@ public class BitFiddleTests {
     System.out.println(result);
     assertTrue(result);
   }
+
+  @Test
+  @DisplayName("Test BitVector 13")
+  public void testBit13() throws Exception {
+    long valueUnderTest = 0b00000000_00000000_00100000_00000000;
+    long bitToTest = 13;
+    boolean result = new BitFiddle().testBitVector(valueUnderTest, bitToTest);
+    System.out.println(result);
+    assertTrue(result);
+  }
 }
