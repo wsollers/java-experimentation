@@ -19,12 +19,12 @@ public class BitFiddle {
       throw new IllegalArgumentException("bitToTest must be between 0 and 63");
     }
     long bucketIndex = bitToTest / 64L;
-    bitVector[(int)bucketIndex] = valueUnderTest;
+    bitVector[(int) bucketIndex] = valueUnderTest;
     long bitIndex = bitToTest % 64L;
     long mask = 1L << bitToTest;
-    boolean result = (mask & bitVector[(int)bucketIndex]) != 0;
-    String binaryString = Long.toBinaryString(bitVector[(int)bucketIndex]);
+    boolean result = (mask & bitVector[(int) bucketIndex]) != 0;
+    String binaryString = Long.toBinaryString(bitVector[(int) bucketIndex]);
     System.out.println(binaryString + ":" + valueUnderTest);
     return result;
-  } 
+  }
 }
